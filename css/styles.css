@@ -49,12 +49,8 @@ section {
     line-height: 16.41px;
 }
 
-.nav-link-current {
+.current {
     color: #2196F3;
-    border: none;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16.41px;
 }
 
 .nav-link:hover, .nav-link:focus {
@@ -237,7 +233,7 @@ body {
     padding-bottom: 94px;
 }
 
-.our-team-section img {
+.our-team-section {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -296,27 +292,27 @@ footer {
 .portofolio-container ul {
     font-family: "roboto", sans-serif;
     font-size: 16px;
-
     width: 100%;
     padding-top: 94px;
 }
 
 .projects-menu {
-    width: 75%;
-    margin-bottom: 50px;
+    width: 100px;
 }
 
 .projects-button {
-    width: 516px;
+    width: 100px;
     height: 38px;
     top: 174px;
     left: 542px;
     list-style-type: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 8px;
+    
 }
 
-.projects-button .button {
+.projects-button .button-port {
     background-color: #f5f4fa;
     border: none;
     color: #000000;
@@ -327,9 +323,11 @@ footer {
     font-size: 16px;
     cursor: pointer;
     text-transform: none;
+    display: flex;
+    width: 120px;
     justify-content: center;
-    padding: 0 18px;
     border-radius: 4px;
+    gap: 8px;
 }
 .projects-menu .projects-button:hover, 
 .projects-menu .projects-button:focus {
