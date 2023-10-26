@@ -106,6 +106,45 @@ body {
     color: #000000;
 }
 
+.contact-email {
+    width: 16px;
+    height: 12px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 4px;
+}
+
+.contact-phone {
+    width: 10px;
+    height: 16px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 4px;
+    
+}
+
+/*.contact-phone:hover a
+.contact-phone:hover div {
+    color: #2196F3;
+    fill: #2196F3;
+}
+*/
+
+.contact-email:hover svg 
+.contact-email:hover a {
+    color: #2196F3;
+    fill: #2196F3;
+}
+
+.nav-contact:hover
+.nav-contact:hover svg {
+    fill: #2196F3;
+    color: #2196F3;
+}
 
 /* Top section */
 .top-section {
@@ -160,10 +199,15 @@ body {
     justify-content: center;
 }
 /* Middle Section */
+.middle-section {
+    padding-top: 94px;
+    display: flex;
+    justify-content: center;
+}
 .middle-section ul {
     display: inline-block;
     background-color: #ffffff;
-    width: 75%;
+    width: 1200px;
     top: 80px;
     align-items: center;
     justify-content: center;
@@ -173,7 +217,8 @@ body {
 
 .column-middle-section {
     float: left;
-    width: 25%;
+    width: 270px;
+    margin: 10px;
 }
 
 .middle-section ul li h3 {
@@ -187,10 +232,27 @@ body {
     font-weight: 400;
     line-height: 24px;
 }
+
+.middle-section-icon {
+    display: block;
+    margin: auto;
+    width: 70px;
+    height: 70px;
+    padding: 25px 100px;
+}
+
+.about-us-icons {
+    width: 100%;
+    border-radius: 4px;
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
+  }
+  
     
 /* What we do section*/
 .what-we-do-section {
     width: 75%;
+    padding-top: 94px;
     top: 969px;
     margin-left: 215px;
     margin-right: 215px;
@@ -206,6 +268,8 @@ body {
     height: 294px;
     top: 1061px;
     margin: 0px 0px 50px 17px;
+    padding-top: 50px;
+    padding-bottom: 94px;
 }
 
 .what-we-do-section h2 {
@@ -257,6 +321,7 @@ body {
     line-height: 18.75px;
     text-align: center;
 }
+
 /* Footer */
 footer {
     background-color: #2F303A;
@@ -278,6 +343,17 @@ footer {
     margin-right: 215px;
 }
 
+.footer-social .footer-social-button .footer-social-link,
+.our-team-section .team-card .team-social-button .team-social-link{
+  fill: rgba(175, 177, 184, 1);
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 12px;
+}
 
 /* PORTOFOLIO */
 .portofolio-container {
