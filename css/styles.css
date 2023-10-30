@@ -103,6 +103,7 @@ body {
     background-color: #ffffff;
     width: 100%;
     color: #000000;
+    margin: 0;
 }
 
 .contact-email {
@@ -346,11 +347,12 @@ body {
     background-color: rgba(255, 255,255, 0.1);
     display: flex;
 }
-.team-social-link:hover {
+.team-social-button a svg:hover,
+.team-social-buttona a svg:focus {
     border-radius: 50px;
-    background-color: #2196F3 !important;
-    color: #FFF !important;
-    fill: #FFF !important;
+    background-color: #2196F3;
+    color: #FFF;
+    fill: #FFF;
 
 }
 
@@ -486,9 +488,9 @@ footer {
 }
 .social-buttons-container a:focus,
 .social-buttons-container a:hover {
-    background-color: #2196F3 !important;
-    color: #FFF !important;
-    fill: #FFF !important;
+    background-color: #2196F3;
+    color: #FFF;
+    fill: #FFF;
 }
 
 .social-buttons-container {
