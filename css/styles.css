@@ -35,11 +35,6 @@ section {
     list-style-type: none;
     justify-content: space-between;
 }
-
-.nav-link .currentweblist {
-    border-bottom: 3px solid #2196F3;
-}
-
 .nav-contact {
     display: flex;
     width: 25%;
@@ -108,11 +103,9 @@ body {
     background-color: #ffffff;
     width: 100%;
     color: #000000;
-    margin: 0;
 }
 
 .contact-email {
-    color: #757575;
     width: 16px;
     height: 12px;
     padding-right: 10px;
@@ -123,7 +116,6 @@ body {
 }
 
 .contact-phone {
-    color: #757575;
     width: 10px;
     height: 16px;
     padding-right: 10px;
@@ -140,8 +132,8 @@ body {
     fill: #2196F3;
 }
 
-.nav-contact a:hover
-.nav-contact a:focus {
+.nav-contact:hover
+.nav-contact:hover svg {
     fill: #2196F3;
     color: #2196F3;
 }
@@ -336,50 +328,34 @@ body {
     text-align: center;
 }
 
-.social-link {
+.team-social-link {
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
 }
-.social-link {
-    width: 20px;
-    height: 20px;
-    fill: #AFB1B8;
-    padding: 22px;
+.icon {
+  fill: #afb1b8;
+  width: 20px;
+  height: 20px;
+  padding: 22px;
 }
 
-.team-card .social-button a:hover {
+.social-find .social-link {
     fill: #AFB1B8;
-    margin: 0;
-    padding: 30px 32px;
-    padding-top: 16px;
-    justify-content: center;
-    align-items: center;
-}
-
-.social-link {
     background-color: rgba(255, 255,255, 0.1);
-    display: flex;
-}
-
-.socialfind .social-buttons .social-link,
-.team-card .social-buttons .social-link {
-    fill: #AFB1B8
+    display: inline-flex;
+    flex-direction: row;
+    border-radius: 50px;
     width: 44px;
     height: 44px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    padding: 12px;
 }
-.team-card .social-button a:hover,
-.social-find .social-button a:hover {
+
+.social-link:hover {
     border-radius: 50px;
-    background-color: #2196F3;
-    color: #FFF;
-    fill: #FFF;
+    background-color: #2196F3 !important;
+    color: #FFF !important;
+    fill: #FFF !important;
 
 }
 
@@ -409,13 +385,13 @@ body {
 }
 
 .regular-customers-icon {
-    fill: #AFB1B8;
     width: 170px;
     height: 92px;
     border-radius: 4px;
     border: 1px;
     display: flex;
     justify-content: center;
+    fill: #AFB1B8;
     padding: 16px 32px;
 }
   
@@ -424,17 +400,10 @@ body {
     margin-left: 30px;
 }
 
-.navcontact a:focus,
-.navcontact a:hover,
+.regular-customers-icon:focus
 .regular-customers-icon:hover {
     color: #2196F3;
     fill: #2196F3;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.regular-customers-buttons:hover {
-    border: 1px solid rgba(33, 150, 243, 1);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Footer */
@@ -499,8 +468,7 @@ footer {
     color: #fff;
     text-decoration: none;
 }
-.social-button-link svg {
-    fill: #AFB1B8;
+.social-link svg {
     width: 20px;
     height: 20px;
     padding-top: 12px;
@@ -514,25 +482,21 @@ footer {
     padding-left: 156px;
     padding-bottom: 20px;
   }
-.social-buttons-container a {
+.social-buttons a {
     background-color: rgba(255, 255,255, 0.1);
     display: flex;
     border-radius: 50px;
     width: 44px;
     height: 44px;
 }
-
-.social-buttons-container a:hover {
-    background-color: #2196F3;
-    color: #FFF;
-    fill: #FFF;
-}
-.social-buttons-container a svg:focus
-.social-buttons-container a svg:hover {
-    fill: #fff;
+.social-buttons a:focus,
+.social-buttons a:hover {
+    background-color: #2196F3 !important;
+    color: #FFF !important;
+    fill: #FFF !important;
 }
 
-.social-buttons-container {
+.social-buttons {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -635,7 +599,7 @@ li .button:hover {
     display: block;
     max-width: 370px;
     flex-basis: calc((100% - 90px) / 3);
-    border: 1px solid #ffffff;
+    border: 1px solid rgba(238, 238, 238, 1);
     cursor: pointer;
 }
 
@@ -682,6 +646,3 @@ li .button:hover {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
     box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
-
-
-
