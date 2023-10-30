@@ -458,9 +458,18 @@ footer {
 }
 .footer-address {
     font-family: "Roboto";
+    font-style: normal;
     font-size: 14px;
     font-weight: 400;
     line-height: 16.41px;
+}
+
+.footer-address a {
+    font-style: normal;
+}
+
+.footer-address P {
+    font-style: normal;
 }
 
 .logo-text-footer a {
